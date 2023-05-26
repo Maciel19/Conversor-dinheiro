@@ -4,6 +4,9 @@ const currencySelect = document.querySelector(".currency-select")
 function convertValues() {
 
     const inputValues = document.querySelector(".input-currency").value
+
+    console.log()
+
     const currencyValuesToConvert = document.querySelector(".currency-value-to-convert") // valor em real
     const currencyConverted = document.querySelector(".currency-value")
 
@@ -30,8 +33,6 @@ function convertValues() {
         }).format(inputValues / euroToday)
 
     }
-
-
 
 
     currencyValuesToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
